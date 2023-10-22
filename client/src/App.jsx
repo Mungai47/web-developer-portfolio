@@ -5,10 +5,12 @@ import Blogs from "./pages/Blogs"
 import ContactMe from "./pages/ContactMe"
 import Portfolio from "./pages/Portfolio"
 import Services from "./pages/Services"
+import Navbar from "./components/Header"
 
 function App() {
   return (
     <BrowserRouter>
+    <Navbar />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about-me" element={<AboutMe />} />
